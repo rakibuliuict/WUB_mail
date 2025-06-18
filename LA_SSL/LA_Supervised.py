@@ -317,7 +317,7 @@ dice_loss = DiceLoss(nclass=2)
 optimizer = optim.Adam(net.parameters(), lr=args.lr)
 
 # === Manual Resume Configuration ===
-start_epoch = 20  # Set this to the epoch you want to resume from
+start_epoch = 0  # Set this to the epoch you want to resume from
 best_dice = 0
 checkpoint_path = os.path.join(args.save_path, "last_checkpoint.pth")
 
