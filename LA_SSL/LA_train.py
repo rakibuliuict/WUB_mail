@@ -222,7 +222,7 @@ def pre_train(args, snapshot_path):
     iter_num = 0
     best_dice = 0
     best_dice2 = 0
-    max_epoch = 4 #81 silo
+    max_epoch = 2 #81 silo
     iterator = tqdm(range(1, max_epoch), ncols=70)
     for epoch_num in iterator:
         logging.info("\n")
